@@ -3,23 +3,3 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model bot {
-  bot_id           String    @id @db.Uuid
-  name             String?
-  description      String?
-  long_description String?
-  invite_url       String?
-  website          String?
-  support_server   String?
-  github           String?
-  prefix           String?
-  avatar           String?
-  client_id        String?
-  server_count     Int?
-  monthly_points   Int?
-  total_points     Int?
-  tags             String[]
-  certified_bot    Boolean?
-  created_at       DateTime? @db.Timestamptz(6)
-  updated_at       DateTime? @db.Timestamptz(6)
-}

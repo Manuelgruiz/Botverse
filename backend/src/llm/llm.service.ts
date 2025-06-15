@@ -14,7 +14,7 @@ export class LlmService {
   constructor(
     private configService: ConfigService,
     private prisma: PrismaService,
-  ) {}
+  ) { }
 
   async chat(
     messages: any[],
